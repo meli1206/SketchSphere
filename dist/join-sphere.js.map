@@ -1,0 +1,1 @@
+{"version":3,"file":"join-sphere.js","sourceRoot":"","sources":["../src/join-sphere.ts"],"names":[],"mappings":";AAAA,MAAM,eAAe,GAAG,QAAQ,CAAC,aAAa,CAAC,oBAAoB,CAAqB,CAAC;AACzF,MAAM,WAAW,GAAG,QAAQ,CAAC,aAAa,CAAC,eAAe,CAAsB,CAAC;AAEjF,WAAW,CAAC,gBAAgB,CAAC,OAAO,EAAE,GAAG,EAAE;IACvC,MAAM,CAAC,QAAQ,CAAC,IAAI,GAAG,aAAa,CAAA;AACxC,CAAC,CAAC,CAAC"}

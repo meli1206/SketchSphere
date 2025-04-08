@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ESnext",           // Keeps your target as modern JavaScript
+    "outDir": "dist",             // Output folder for compiled files
+    "sourceMap": true,            // Generates source maps for debugging
+    "strict": true,               // Enables strict type-checking
+    "strictPropertyInitialization": false,
+    "moduleResolution": "node",  // Resolves modules in a Node-like way
+    "module": "ESNext"            // Change this to ESNext (for browser or modern module system)
+  },
+  "include": ["src/**/*"]
+}

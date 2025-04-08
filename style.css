@@ -1,0 +1,211 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7eef6;
+  color: #766c6b;
+  margin: 0;
+  padding: 0;
+  padding-top: 75px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+* {
+  font-family: "Comfortaa", sans-serif;
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+  height: 540px;
+  max-width: 90%;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.tools-board {
+  width: 210px;
+  height: 590px;
+  border-radius: 20px;
+  background-color: #f8f7f6;
+  padding: 15px 22px 0;
+}
+
+.tools-board .row {
+  margin-bottom: 20px;
+}
+
+.row .options {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  list-style: none;
+  margin: 10px;
+}
+
+.row .options .option {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+div.scroll {
+  height: 500px;
+  overflow-y: scroll;
+}
+
+/* .option :where(span, label) {
+  color: black;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+.option:is(:hover, .active) :where(span, label) {
+  color: pink;
+} */
+
+.names .option:nth-child(1) {
+  width: 100%;
+  margin: 10px;
+  color: #766c6b;
+  border: 2px solid #a89c9c;
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+.option #fill-color {
+  height: 14px;
+  cursor: pointer;
+  width: 14px;
+}
+
+#fill-color:checked~label {
+  color: #e93e2b;
+}
+
+.option #size-slider {
+  width: 100%;
+  height: 5px;
+  margin-top: 10px;
+}
+
+.colors .options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.colors .option {
+  height: 30px;
+  width: 30px;
+  border-radius: 30%;
+  margin-top: 3px;
+  position: relative;
+}
+
+.colors .option .options.color-picker {
+  width: 100%;
+}
+
+.colors .option:nth-child(1) {
+  background-color: #766c6b;
+}
+
+.colors .option:nth-child(2) {
+  background-color: #f495f2;
+}
+
+.colors .option:nth-child(3) {
+  background-color: #f8f3a3;
+}
+
+.colors .option:nth-child(4) {
+  background-color: #b0debc;
+}
+
+.colors .option:nth-child(5) {
+  background: linear-gradient(45deg, #f495f2 0%, #f8f3a3 50%, #b0debc 100%);
+}
+
+.colors .option.selected::before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  top: 50%;
+  left: 50%;
+  background: inherit;
+  border-radius: inherit;
+  border: 2px solid #fff;
+  transform: translate(-50%, -50%);
+}
+
+.option #color-picker {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.buttons button {
+  width: 100%;
+  margin: 10px;
+  color: #766c6b;
+  border: none;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  /* width: 80%;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  padding: 3px 0;
+  margin-bottom: 13px;
+  background: none;
+  border-radius: 5px;
+  cursor: pointer; */
+}
+
+.buttons .input {
+  width: 100%;
+  margin: 10px;
+  color: #766c6b;
+  border: 2px solid #a89c9c;
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+.buttons .label {
+  margin: 10px;
+}
+
+.buttons .clear-canvas {
+  color: black;
+  border: 1px solid #9fc39f;
+  transition: all 0.2s ease;
+  border: 2px solid black;
+  font-size: 13px;
+}
+
+.button:hover {
+  color: white;
+  background: #a89c9c;
+}
+
+.buttons .save-img {
+  background: white;
+  color: black;
+  border: 1px solid #6c757d;
+}
+
+.drawing-board {
+  flex: 1;
+}
+
+.drawing-board canvas {
+  width: 100%;
+  height: 590px;
+  border-radius: 10px;
+}
